@@ -202,3 +202,8 @@ nav ul.navbar li a.active {
   background-color: #00f7ff;
   color: black;
 }
+
+header h1 {
+    text-align: center;
+    margin: 0;
+}
