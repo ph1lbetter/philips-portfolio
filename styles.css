@@ -1,40 +1,120 @@
+/* General styling */
 body {
-  background-color: #222;
-  color: #fff;
-  font-family: sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1e1e1e;
+  color: white;
 }
+
 header {
-  padding: 20px;
+  background-color: #2b2b2b;
   text-align: center;
-  background: #111;
+  padding: 40px 0 10px;
 }
-.navbar {
-  list-style: none;
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+nav {
   display: flex;
   justify-content: center;
-  padding: 0;
+  gap: 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
-.navbar li {
-  margin: 0 10px;
-}
-.navbar a {
-  text-decoration: none;
+
+nav a {
   color: white;
-  padding: 8px 15px;
-  border-radius: 5px;
-  background-color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
 }
-.navbar a.active,
-.navbar a:hover {
-  background-color: #00d1d1;
+
+nav a:hover {
+  background-color: #00e6e6;
   color: black;
 }
+
+nav a.active {
+  background-color: #00e6e6;
+  color: black;
+}
+
 .content {
-  padding: 20px;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
   text-align: center;
 }
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Portfolio Section */
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.portfolio-card {
+  background-color: #2b2b2b;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-card h3 {
+  color: #00e6e6;
+  margin-bottom: 10px;
+}
+
+.portfolio-card p {
+  font-size: 14px;
+}
+
+.card-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card-buttons a {
+  background-color: #00e6e6;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.card-buttons a:hover {
+  background-color: #00cccc;
+}
+
+/* Poster & Image Gallery */
+.poster-gallery,
+.stamp-gallery,
 .image-gallery {
   display: flex;
   justify-content: center;
@@ -43,9 +123,10 @@ header {
   margin-top: 2rem;
 }
 
+.poster-gallery img,
+.stamp-gallery img,
 .image-gallery img {
-  max-width: 100%;
-  width: 300px;
-  border-radius: 12px;
+  width: 200px;
+  border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
