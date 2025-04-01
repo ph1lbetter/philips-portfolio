@@ -170,3 +170,33 @@ footer {
 .gym-gallery img:hover {
   transform: scale(1.05);
 }
+
+/* Horizontal Navbar Style */
+nav ul.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+nav ul.navbar li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  background-color: transparent;
+}
+
+nav ul.navbar li a:hover {
+  background-color: #00f7ff;
+  color: black;
+}
+
+nav ul.navbar li a.active {
+  background-color: #00f7ff;
+  color: black;
+}
