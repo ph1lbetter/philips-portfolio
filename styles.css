@@ -35,7 +35,7 @@ nav a:hover {
 }
 
 .hero {
-    padding: 120px 20px;
+    padding: 160px 20px 100px;
     background: linear-gradient(135deg, #1e1e1e, #292929);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -62,7 +62,7 @@ nav a:hover {
 }
 
 .content {
-    padding: 100px 20px 60px;
+    padding: 160px 20px 60px;
 }
 
 ul {
