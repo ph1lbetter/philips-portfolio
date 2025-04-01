@@ -203,6 +203,8 @@ nav ul.navbar li a.active {
   color: black;
 }
 
-h1 {
+.hero h1,
+.content h1,
+header h1 {
   text-align: center;
 }
