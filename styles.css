@@ -161,7 +161,9 @@ footer {
 }
 
 .gym-gallery img {
-  width: 200px; /* smaller width */
+  width: 200px;
+  max-width: 90%;
+  height: auto;
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
