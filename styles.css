@@ -202,9 +202,3 @@ nav ul.navbar li a.active {
   background-color: #00f7ff;
   color: black;
 }
-
-.hero h1,
-.hero h2 {
-    text-align: center;
-    margin: 0 auto;
-}
