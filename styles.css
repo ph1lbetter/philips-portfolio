@@ -1,168 +1,148 @@
-/* General styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #1e1e1e;
-  color: white;
+  background-color: #1f1f1f;
+  color: #ffffff;
 }
 
 header {
-  background-color: #2b2b2b;
-  padding: 20px 0;
+  background-color: #2c2c2c;
   text-align: center;
+  padding: 40px 20px 20px;
 }
 
-h1, h2 {
-  margin: 0;
-  font-weight: bold;
-}
-
-h1 {
+header h1 {
   font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
 nav {
-  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #2c2c2c;
+  padding-bottom: 10px;
 }
 
 nav a {
   text-decoration: none;
-  color: white;
-  margin: 0 15px;
-  padding: 10px 15px;
-  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  background-color: #3a3a3a;
+  padding: 12px 20px;
+  margin: 8px;
   border-radius: 10px;
-  transition: all 0.2s ease-in-out;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-nav a:hover,
-nav a.active {
-  background-color: #00e0ff;
-  color: black;
+nav a:hover {
+  background-color: #00e5ff;
+  color: #000;
 }
 
-/* Content section styling */
-.content {
-  max-width: 1000px;
-  margin: 0 auto;
+section {
   padding: 40px 20px;
+  max-width: 960px;
+  margin: auto;
   text-align: center;
 }
 
-/* Cards on Portfolio */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 20px;
+  margin-top: 30px;
 }
 
 .card {
-  background-color: #2b2b2b;
-  padding: 20px;
-  border-radius: 15px;
-  width: 300px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 280px;
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card h3 {
-  color: #00e0ff;
-  margin-bottom: 10px;
+  color: #00e5ff;
+  font-size: 1.3rem;
 }
 
 .card p {
-  font-size: 0.95rem;
   color: #ccc;
+  font-size: 0.95rem;
 }
 
-.card-buttons {
-  margin-top: 15px;
+.card .button-group {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
 }
 
-.card-buttons a {
-  background-color: #00e0ff;
+.card a.button {
+  display: inline-block;
   padding: 10px 15px;
-  border-radius: 10px;
+  background-color: #00e5ff;
+  color: #000;
   text-decoration: none;
-  color: black;
   font-weight: bold;
-  transition: background-color 0.2s ease-in-out;
+  border-radius: 8px;
+  transition: background-color 0.3s;
 }
 
-.card-buttons a:hover {
-  background-color: #00b8d4;
+.card a.button:hover {
+  background-color: #00bcd4;
 }
 
-/* Marketing Poster Images */
 .poster-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 20px;
+  margin-top: 30px;
 }
 
 .poster-gallery img {
-  width: 300px;
+  max-width: 200px;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-/* Stamp Card Images */
-.stamp-gallery {
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2c2c2c;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.life-photos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 20px;
+  margin-top: 30px;
 }
 
-.stamp-gallery img {
-  width: 200px;
+.life-photos img {
+  width: 280px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-/* Life Outside Work Gallery */
-.image-gallery {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-}
-
-.image-gallery img {
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-}
-
-/* Responsive text */
-@media screen and (max-width: 768px) {
-  nav a {
-    display: block;
-    margin: 10px auto;
-  }
-
-  .card-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .poster-gallery,
-  .stamp-gallery,
-  .image-gallery {
-    flex-direction: column;
-    align-items: center;
-  }
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
 }
