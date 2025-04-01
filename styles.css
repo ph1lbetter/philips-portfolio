@@ -1,71 +1,62 @@
-/* General styling */
+/* General styles */
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #1e1e1e;
   color: white;
 }
 
 header {
   background-color: #2b2b2b;
+  padding: 20px 0;
   text-align: center;
-  padding: 40px 0 10px;
 }
 
-header h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
+h1, h2 {
+  margin: 0;
   font-weight: bold;
-  padding: 8px 16px;
-  border-radius: 10px;
-  transition: background-color 0.3s;
 }
 
-nav a:hover {
-  background-color: #00e6e6;
-  color: black;
-}
-
-nav a.active {
-  background-color: #00e6e6;
-  color: black;
-}
-
-.content {
-  padding: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
+h1 {
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-p {
-  font-size: 16px;
-  line-height: 1.6;
+nav {
+  margin-top: 10px;
 }
 
-/* Portfolio Section */
-.portfolio-container {
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  padding: 10px 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #00e0ff;
+  color: black;
+}
+
+/* Content section styling */
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Cards on Portfolio */
+.card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -73,48 +64,75 @@ p {
   margin-top: 2rem;
 }
 
-.portfolio-card {
+.card {
   background-color: #2b2b2b;
-  border-radius: 15px;
   padding: 20px;
+  border-radius: 15px;
   width: 300px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-.portfolio-card h3 {
-  color: #00e6e6;
+.card h3 {
+  color: #00e0ff;
   margin-bottom: 10px;
 }
 
-.portfolio-card p {
-  font-size: 14px;
+.card p {
+  font-size: 0.95rem;
+  color: #ccc;
 }
 
 .card-buttons {
   margin-top: 15px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
+  justify-content: space-between;
 }
 
 .card-buttons a {
-  background-color: #00e6e6;
-  color: black;
-  padding: 8px 16px;
-  border-radius: 8px;
+  background-color: #00e0ff;
+  padding: 10px 15px;
+  border-radius: 10px;
   text-decoration: none;
+  color: black;
   font-weight: bold;
-  transition: background-color 0.3s;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .card-buttons a:hover {
-  background-color: #00cccc;
+  background-color: #00b8d4;
 }
 
-/* Poster & Image Gallery */
-.poster-gallery,
-.stamp-gallery,
+/* Marketing Poster Images */
+.poster-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.poster-gallery img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Stamp Card Images */
+.stamp-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stamp-gallery img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Life Outside Work Gallery */
 .image-gallery {
   display: flex;
   justify-content: center;
@@ -123,10 +141,28 @@ p {
   margin-top: 2rem;
 }
 
-.poster-gallery img,
-.stamp-gallery img,
 .image-gallery img {
-  width: 200px;
+  width: 300px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive text */
+@media screen and (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .poster-gallery,
+  .stamp-gallery,
+  .image-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
 }
