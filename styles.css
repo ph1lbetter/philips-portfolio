@@ -145,11 +145,11 @@ footer {
   color: #00f7ff;
 }
 
-#life-outside-work p {
-  max-width: 700px;
-  margin: 0 auto 20px;
-  font-size: 1.1em;
-  line-height: 1.6em;
+#life-outside-work {
+  background-color: #111;
+  color: white;
+  padding: 120px 20px 60px; /* Increased top padding */
+  text-align: center;
 }
 
 .gym-gallery {
@@ -161,7 +161,7 @@ footer {
 }
 
 .gym-gallery img {
-  width: 250px;
+  width: 200px; /* smaller width */
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
