@@ -206,3 +206,9 @@ nav ul.navbar li a.active {
 h1 {
     text-align: center;
 }
+
+header h1 {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
