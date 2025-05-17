@@ -131,4 +131,12 @@ footer {
   padding: 20px;
   font-size: 0.9rem;
   color: #ccc;
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 }
