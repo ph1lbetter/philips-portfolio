@@ -26,14 +26,14 @@ header {
 }
 
 .logo {
-  height: 48px;
+  height: 75px;
   width: auto;
 }
 
 .navbar {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 30px;
   margin: 0;
   padding: 0;
 }
@@ -46,7 +46,7 @@ header {
 }
 
 .navbar li a:hover {
-  color: #bb86fc; /* subtle purple hover */
+  color: #bb86fc;
 }
 
 .hero {
@@ -72,18 +72,18 @@ header {
 
 .cta-button {
   background: #bb86fc;
-  color: white;
+  color: #fff;
   font-weight: 600;
   text-decoration: none;
   padding: 15px 30px;
   border-radius: 30px;
-  box-shadow: 0 0 15px rgba(187, 134, 252, 0.3);
+  box-shadow: 0 0 15px rgba(187, 134, 252, 0.2);
   transition: all 0.3s ease;
 }
 
 .cta-button:hover {
-  background: #a366e8;
-  box-shadow: 0 0 20px rgba(187, 134, 252, 0.5);
+  background: #a86ff5;
+  box-shadow: 0 0 20px rgba(187, 134, 252, 0.4);
   transform: translateY(-3px);
 }
 
