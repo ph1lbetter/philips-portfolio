@@ -3,12 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Philip S. Olender | Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Philip's Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <div id="particles-js"></div>
-
   <header>
     <img src="images/pologoOFFICIAL.png" class="logo" alt="Philip's Logo">
     <nav>
@@ -20,7 +18,7 @@
     </nav>
   </header>
 
-  <section class="hero">
+  <section class="hero animated-bg">
     <h2>Welcome to My Portfolio</h2>
     <p>UX Designer • Data Analyst • Psychology + Computer Science</p>
     <a href="portfolio.html" class="btn">View Portfolio</a>
@@ -29,48 +27,5 @@
   <footer>
     <p>&copy; 2025 Philip Olender</p>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script>
-    particlesJS('particles-js', {
-      "particles": {
-        "number": {
-          "value": 75,
-          "density": { "enable": true, "value_area": 800 }
-        },
-        "color": { "value": "#b66bff" },
-        "shape": {
-          "type": "circle",
-          "stroke": { "width": 0, "color": "#000000" }
-        },
-        "opacity": {
-          "value": 0.3,
-          "random": true
-        },
-        "size": {
-          "value": 3,
-          "random": true
-        },
-        "move": {
-          "enable": true,
-          "speed": 1,
-          "direction": "none",
-          "out_mode": "out"
-        }
-      },
-      "interactivity": {
-        "detect_on": "canvas",
-        "events": {
-          "onhover": { "enable": true, "mode": "repulse" },
-          "onclick": { "enable": true, "mode": "push" }
-        },
-        "modes": {
-          "repulse": { "distance": 100, "duration": 0.4 },
-          "push": { "particles_nb": 4 }
-        }
-      },
-      "retina_detect": true
-    });
-  </script>
 </body>
 </html>
