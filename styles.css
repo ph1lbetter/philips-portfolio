@@ -51,7 +51,7 @@ nav a.active {
 }
 
 .hero {
-  padding: 120px 20px 60px;
+  padding: 80px 20px 60px;
   background: linear-gradient(to bottom, #1c1c1c, #121212);
   display: flex;
   flex-direction: column;
@@ -61,13 +61,14 @@ nav a.active {
 }
 
 .hero h2 {
-  font-size: 2.8em;
-  margin-bottom: 15px;
+  font-size: 3.2em;
+  margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin-bottom: 30px;
+  color: #ccc;
 }
 
 .btn {
