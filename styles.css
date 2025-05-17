@@ -24,12 +24,24 @@ header {
 .logo {
   height: 40px;
   width: auto;
+  max-width: 100%;
 }
+
+header img {
+  height: 40px;
+  width: auto;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
 nav a {
   color: #ffffff;
   text-decoration: none;
-  margin-left: 20px;
   font-weight: 600;
+  font-size: 16px;
   transition: color 0.3s ease;
 }
 
@@ -70,6 +82,7 @@ nav a.active {
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 15px #b66bff;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .btn:hover {
@@ -84,7 +97,6 @@ footer {
   color: #aaa;
 }
 
-/* Project Grid */
 .content {
   padding: 100px 20px 60px;
 }
@@ -119,7 +131,6 @@ footer {
   margin-bottom: 15px;
 }
 
-/* Button group inside cards */
 .button-group {
   display: flex;
   flex-wrap: wrap;
@@ -169,13 +180,25 @@ footer {
   transform: scale(1.05);
 }
 
-/* Mobile Responsive Navbar */
+/* Skills list (About page) */
+ul {
+  list-style: disc;
+  padding-left: 20px;
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Responsive adjustments */
 @media screen and (max-width: 768px) {
   nav {
-    display: flex;
     flex-direction: column;
+    gap: 15px;
     align-items: flex-end;
-    gap: 10px;
   }
 
   .hero h2 {
