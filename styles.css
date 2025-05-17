@@ -23,7 +23,7 @@ header {
 
 .logo {
   height: 40px;
-}
+  width: auto;
 
 nav a {
   color: #ffffff;
