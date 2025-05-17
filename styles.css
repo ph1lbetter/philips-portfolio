@@ -10,21 +10,50 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #ffffff;
   text-align: center;
+  background-color: #121212;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* === VIBRANT ANIMATION for index.html === */
+.gradient-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 20% 30%, #5c28ff, transparent 40%),
+              radial-gradient(circle at 80% 70%, #00d4ff, transparent 40%),
+              radial-gradient(circle at 50% 50%, #b66bff, transparent 40%);
+  animation: animateGradient 15s ease infinite;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@keyframes animateGradient {
+  0%   { transform: translate(0, 0); }
+  50%  { transform: translate(-25%, -25%); }
+  100% { transform: translate(0, 0); }
+}
+
+/* === SUBTLE ANIMATION for other pages === */
+.subtle-gradient-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
   background: linear-gradient(-45deg, #0f0f1a, #1a0f1f, #150f2c, #0e0e1a);
   background-size: 400% 400%;
-  animation: gradientBG 30s ease infinite;
+  animation: gradientBG 18s ease-in-out infinite;
+  z-index: -1;
+  opacity: 0.5;
 }
 
 @keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 header {
@@ -74,7 +103,7 @@ nav a.active {
 }
 
 .hero h2 {
-  font-size: 3.2em;
+  font-size: 3.4em;
   margin-bottom: 20px;
 }
 
@@ -105,7 +134,7 @@ nav a.active {
 }
 
 footer {
-  background: transparent;
+  background: none;
   padding: 15px;
   font-size: 0.9em;
   color: #aaa;
