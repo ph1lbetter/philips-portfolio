@@ -11,17 +11,6 @@ body {
   background-color: #121212;
   color: #ffffff;
   text-align: center;
-  overflow-x: hidden;
-}
-
-/* Floating particle background */
-#particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  top: 0;
-  left: 0;
 }
 
 header {
@@ -63,46 +52,43 @@ nav a.active {
 
 .hero {
   padding: 120px 20px 80px;
-  background: linear-gradient(to bottom, #1c1c1c, #121212);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 70vh;
+  min-height: 80vh;
+  position: relative;
+  z-index: 1;
 }
 
 .hero h2 {
   font-size: 3.6em;
-  font-weight: 700;
   margin-bottom: 20px;
-  text-shadow: 0 0 15px rgba(182, 107, 255, 0.25);
 }
 
 .hero p {
   font-size: 1.4em;
   margin-bottom: 30px;
-  color: #ccc;
-  text-shadow: 0 0 8px rgba(182, 107, 255, 0.15);
+  color: #ddd;
 }
 
 .btn {
   display: inline-block;
-  padding: 14px 26px;
+  padding: 16px 32px;
   background-color: #b66bff;
   color: white;
   font-weight: bold;
   border: none;
-  border-radius: 25px;
+  border-radius: 30px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 15px #b66bff;
+  box-shadow: 0 0 18px #b66bff;
   cursor: pointer;
-  white-space: nowrap;
 }
 
 .btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 25px #b66bff;
+  box-shadow: 0 0 28px #b66bff;
 }
 
 footer {
@@ -112,100 +98,17 @@ footer {
   color: #aaa;
 }
 
-.content {
-  padding: 100px 20px 60px;
+/* Animated Gradient Background */
+.animated-bg {
+  background: linear-gradient(45deg, #0f0c29, #302b63, #24243e, #00416a, #e100ff);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
 }
 
-.content h2 {
-  font-size: 2em;
-  margin-bottom: 40px;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  justify-items: center;
-}
-
-.project-card {
-  background-color: #1e1e1e;
-  padding: 25px;
-  border-radius: 16px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
-  max-width: 350px;
-}
-
-.project-card h3 {
-  color: #b66bff;
-  margin-bottom: 12px;
-}
-
-.project-card p {
-  font-size: 0.95em;
-  margin-bottom: 15px;
-}
-
-.button-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.button-group .btn {
-  flex: 1 1 auto;
-  white-space: nowrap;
-}
-
-/* Poster Gallery */
-.poster-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 40px;
-}
-
-.poster-gallery img {
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-/* Life Page Gallery */
-.gym-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.gym-gallery img {
-  width: 280px;
-  max-width: 100%;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-  box-shadow: 0 0 12px rgba(0,0,0,0.5);
-}
-
-.gym-gallery img:hover {
-  transform: scale(1.05);
-}
-
-/* Skills list (About page) */
-ul {
-  list-style: disc;
-  padding-left: 20px;
-  max-width: 700px;
-  margin: 20px auto;
-  text-align: left;
-}
-
-li {
-  margin-bottom: 8px;
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* Responsive adjustments */
@@ -217,11 +120,11 @@ li {
   }
 
   .hero h2 {
-    font-size: 2.4em;
+    font-size: 2.2em;
   }
 
   .hero p {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   .btn {
